@@ -536,7 +536,7 @@
 .mh-inbox:before {
   content: "\efa0";
 }
-.mh-link:before {
+.mh-link-alt:before {
   content: "\efa1";
 }
 .mh-redo:before {
@@ -971,7 +971,7 @@
 .mh-monetization-on:before {
   content: "\f031";
 }
-.mh-title:before {
+.mh-title-alt:before {
   content: "\f032";
 }
 .mh-table-chart:before {
@@ -2411,7 +2411,7 @@
 .mh-redeem:before {
   content: "\f211";
 }
-.mh-search:before {
+.mh-search-alt:before {
   content: "\f212";
 }
 .mh-settings:before {
@@ -8011,7 +8011,7 @@
   content: "\ecce";
   color: #825794;
 }
-.mh-icon:before {
+.mh-icon-alt:before {
   content: "\eccf";
   color: #31b8bb;
 }
