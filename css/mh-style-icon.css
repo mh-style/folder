@@ -36,14 +36,27 @@
   font-size: 25px;
 }
 .mh-is-3{
-  font-size: 30px;
-}
-.mh-is-4{
   font-size: 35px;
 }
-.mh-is-5{
-  font-size: 40px;
+.mh-is-4{
+  font-size: 45px;
 }
+.mh-is-5{
+  font-size: 55px;
+}
+.mh-is-6{
+  font-size: 65px;
+}
+.mh-is-7{
+  font-size: 75px;
+}
+.mh-is-8{
+  font-size: 85px;
+}
+.mh-is-9{
+  font-size: 95px;
+}
+
 .mh-error:before {
   content: "\eefd";
 }

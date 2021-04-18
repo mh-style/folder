@@ -1271,74 +1271,92 @@ body {
 }
 
 /*==============text-color================*/
+.mh-color-black-hover:hover,
 .mh-color-black {
   color: #000 !important;
 }
 
+.mh-color-white-hover:hover,
 .mh-color-white {
   color: white !important;
 }
 
+.mh-color-light-hover:hover,
 .mh-color-light {
   color: #f8f9fa !important;
 }
 
+.mh-color-limegreen-hover:hover,
 .mh-color-limegreen {
   color: limegreen !important;
 }
 
+.mh-color-blue-hover:hover,
 .mh-color-blue {
   color: blue !important;
 }
 
+.mh-color-orange-hover:hover,
 .mh-color-orange {
   color: orange !important;
 }
 
+.mh-color-green-hover:hover,
 .mh-color-green {
   color: green !important;
 }
 
+.mh-color-lightgreen-hover:hover,
 .mh-color-lightgreen {
   color: lightgreen !important;
 }
 
+.mh-color-darkgreen-hover:hover,
 .mh-color-darkgreen {
   color: darkgreen !important;
 }
 
+.mh-color-red-hover:hover,
 .mh-color-red {
   color: red !important;
 }
 
+.mh-color-skyblue-hover:hover,
 .mh-color-skyblue {
   color: skyblue !important;
 }
 
+.mh-color-darkblue-hover:hover,
 .mh-color-darkblue {
   color: rgb(0, 140, 255) !important;
 }
 
+.mh-color-maroon-hover:hover,
 .mh-color-maroon {
   color: maroon !important;
 }
 
+.mh-color-yellow-hover:hover,
 .mh-color-yellow {
   color: yellow !important;
 }
 
+.mh-color-lightgray-hover:hover,
 .mh-color-lightgray {
   color: lightgray !important;
 }
 
+.mh-color-gray-hover:hover,
 .mh-color-gray {
   color: gray !important;
 }
 
+.mh-color-gold-hover:hover,
 .mh-color-gold {
   color: gold !important;
 }
 
+.mh-color-aqua-hover:hover,
 .mh-color-aqua {
   color: aqua !important;
 }
@@ -1403,78 +1421,97 @@ body {
 
 /*===========background-color==============*/
 
+.mh-bg-black-hover:hover,
 .mh-bg-black {
   background-color: #000 !important;
 }
 
+.mh-bg-white-hover:hover,
 .mh-bg-white {
   background-color: white !important;
 }
 
+.mh-bg-light-hover:hover,
 .mh-bg-light {
   background-color: #f8f9fa !important;
 }
 
+.mh-bg-blue-hover:hover,
 .mh-bg-blue {
   background-color: blue !important;
 }
 
+.mh-bg-green-hover:hover,
 .mh-bg-green {
   background-color: green !important;
 }
 
+.mh-bg-lightgreen-hover:hover,
 .mh-bg-lightgreen {
   background-color: lightgreen !important;
 }
 
+.mh-bg-limegreen-hover:hover,
 .mh-bg-limegreen {
   background-color: limegreen !important;
 }
 
+.mh-bg-orange-hover:hover,
 .mh-bg-orange {
   background-color: orange !important;
 }
 
+.mh-bg-darkgreen-hover:hover,
 .mh-bg-darkgreen {
   background-color: darkgreen !important;
 }
 
+.mh-bg-red-hover:hover,
 .mh-bg-red {
   background-color: red !important;
 }
 
+.mh-bg-skyblue-hover:hover,
 .mh-bg-skyblue {
   background-color: skyblue !important;
 }
 
+.mh-bg-darkblue-hover:hover,
 .mh-bg-darkblue {
   background-color: rgb(0, 140, 255) !important;
 }
 
+.mh-bg-maroon-hover:hover,
 .mh-bg-maroon {
   background-color: maroon !important;
 }
 
+.mh-bg-yellow-hover:hover,
 .mh-bg-yellow {
   background-color: yellow !important;
 }
 
+.mh-bg-lightgray-hover:hover,
 .mh-bg-lightgray {
   background-color: lightgray !important;
 }
 
+.mh-bg-gray-hover:hover,
 .mh-bg-gray {
   background-color: gray !important;
 }
 
+.mh-bg-gold-hover:hover,
 .mh-bg-gold {
   background-color: gold !important;
 }
 
+.mh-bg-aqua-hover:hover,
 .mh-bg-aqua {
   background-color: aqua !important;
 }
 
+.mh-bg-blank-hover:hover,
 .mh-bg-blank {
   background: transparent !important;
 }
@@ -4215,7 +4252,7 @@ color: #ddd;
 }
 
 /*=============Accordion============*/
-.mh-accordion {
+.mh-accordion-style-1 .mh-accordion {
   background-color: #8fb7a5;
   color: #fff;
   cursor: pointer;
@@ -4228,7 +4265,7 @@ color: #ddd;
   outline: none;
 }
 
-.mh-accordion-panel {
+.mh-accordion-style-1 .mh-accordion-panel {
   background-color: #fff;
   padding: 0 18px;
   overflow: hidden;
@@ -4236,26 +4273,86 @@ color: #ddd;
   transition: max-height 0.2s ease-out;
 }
 
-.mh-accordion-panel p {
+.mh-accordion-style-1 .mh-accordion-panel p {
   font: 16px lato, sans-serif;
 }
 
-.mh-acordion-active,
-.mh-accordion:hover {
+.mh-accordion-style-1 .mh-accordion-active,
+.mh-accordion-style-1 .mh-accordion:hover {
   background-color: #527e6a;
 }
 
-.mh-accordion:after {
+.mh-accordion-style-1 .mh-accordion:after {
   content: "\02795";
   font-size: 15px;
   float: right;
   margin-left: 5px;
 }
 
-.mh-accordion-active:after {
+.mh-accordion-style-1 .mh-accordion-active:after {
   content: "\02796";
 }
-
+/*=============accordion-2===============*/
+.mh-accardion-style-2 .mh-accordion-body{
+  cursor: pointer;
+  margin: 5px 0;
+}
+.mh-accardion-style-2 .mh-accordion-title{
+  background-color: #a77fb7;
+  padding: 15px;
+  display: flex;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: space-between;
+}
+.mh-accardion-style-2 .mh-accordion-icon{
+  position: relative;
+  width: 14px;
+}
+.mh-accardion-style-2 .mh-accordion-icon:before,.mh-accardion-style-2 .mh-accordion-icon:after{
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  background-color: #fff;
+  top: -1.5px;
+}
+.mh-accardion-style-2 .mh-accordion-icon:after{
+  transform: rotate(90deg);
+  transition:.3s linear;
+}
+.mh-accardion-style-2 .mh-accordion-content{
+  background: #7676C7;
+  color: #fff;
+  line-height: 24px;
+  margin: 6px 0;
+  font-size: 19px;
+  opacity: 0;
+  display: none;
+  height: 0px;
+  transition: .3s ease;
+}
+.mh-accardion-style-2 .mh-accordion-body:target .mh-accordion-content{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+  display: block;
+  margin: 0px 0px 12px 0;
+}
+.mh-accardion-style-2 .mh-accordion-body:target .mh-accordion-icon:after{
+  transform: rotate(0deg);
+}
+@media screen and (max-width: 768px){
+  .mh-accardion-style-2 .mh-accordion-title{
+    font-size: 17px;
+  }
+  .mh-accardion-style-2 .mh-accordion-content{
+    font-size: 14px;
+  }
+}
 /*=============switch==============*/
 /* .mh-switch-1,
 .mh-switch-2{
@@ -9849,4 +9946,200 @@ color: #ddd;
 .mh-sidebar-inner .mh-sidebar-menu > li > ul > li.active > a, .mh-sidebar-inner .mh-sidebar-menu > li > ul > li > a:hover {
 	color: white !important;
 	background: #00abff8f;
+}
+/**
+*tooltip*/
+.mh-tooltip-style-1 .mh-tooltip {
+  position: relative;
+  display: inline-block;
+  color: #000;
+}
+
+.mh-tooltip-style-1 .mh-tooltip .mh-tooltip-content {
+  visibility: hidden;
+}
+
+.mh-tooltip-style-1 .mh-tooltip .mh-tooltip-content {
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  width: 150px;
+  max-width: 150px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1.4;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.mh-tooltip-style-1 .mh-tooltip-bottom {
+  top: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-right-width: 0;
+}
+
+.mh-tooltip-style-1 .mh-tooltip-top {
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-right-width: 0;
+}
+
+.mh-tooltip-style-1 .mh-tooltip-left {
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  border-right-width: 0;
+  margin-right: 10px;
+
+}
+.mh-tooltip-style-1 .mh-tooltip-right {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  border-right-width: 0;
+  margin-left: 10px;
+}
+
+.mh-tooltip-style-1 .mh-tooltip:hover .mh-tooltip-content:after {
+  position: absolute;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  content: "";
+}
+
+.mh-tooltip-style-1 .mh-tooltip-bottom:after {
+bottom: 100%;
+border-top-width: 0;
+border-bottom-color: rgba(0, 0, 0, 0.8) !important;
+transform: translateX(-50%);
+left: 50%;
+}
+.mh-tooltip-style-1 .mh-tooltip-top:after {
+  top: 100%;
+border-bottom-width: 0;
+border-top-color: rgba(0, 0, 0, 0.8) !important;
+transform: translateX(-50%);
+left: 50%;
+}
+
+.mh-tooltip-style-1 .mh-tooltip-left:after {
+  top: calc(50% - 5px);
+  right: -6%;
+  border-right-width: 0;
+  border-left-color: rgba(0, 0, 0, 0.8) !important;
+}
+.mh-tooltip-style-1 .mh-tooltip-right:after {
+  top: calc(50% - 5px);
+  left: -6%;
+  border-left-width: 0;
+  border-right-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.mh-tooltip-style-1 .mh-tooltip:hover .mh-tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/********************/
+.mh-tooltip-style-2 .mh-tooltip {
+  position: relative;
+  display: inline-block;
+  color: #000;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.mh-tooltip-style-2 .mh-tooltip:before {
+  position: absolute;
+  z-index: 2;
+  display: none;
+  width: 150px;
+  max-width: 150px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1.4;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  content: attr(content);
+}
+
+.mh-tooltip-style-2 .mh-tooltip:after {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  content: "";
+}
+
+.mh-tooltip-style-2 .mh-tooltip:hover:before,
+.mh-tooltip-style-2 .mh-tooltip:hover:after {
+  display: inline-block;
+}
+
+
+.mh-tooltip-style-2 .mh-tooltip.mh-tooltip-top:before {
+  bottom: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mh-tooltip-style-2 .mh-tooltip.mh-tooltip-top:after {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-width: 0;
+  border-top-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.mh-tooltip-style-2 .mh-tooltip.mh-tooltip-bottom:before {
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mh-tooltip-style-2 .mh-tooltip.mh-tooltip-bottom:after {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-width: 0;
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.mh-tooltip-style-2 .mh-tooltip.mh-tooltip-left:before {
+  top: 50%;
+  right: calc(100% + 5px);
+  transform: translateY(-50%);
+}
+
+.mh-tooltip-style-2 .mh-tooltip.mh-tooltip-left:after {
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  border-right-width: 0;
+  border-left-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.mh-tooltip-style-2 .mh-tooltip.mh-tooltip-right:before {
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translateY(-50%);
+}
+
+.mh-tooltip-style-2 .mh-tooltip.mh-tooltip-right:after {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  border-left-width: 0;
+  border-right-color: rgba(0, 0, 0, 0.8);
 }
