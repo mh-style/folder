@@ -1266,6 +1266,10 @@ body {
   text-transform: uppercase;
 }
 
+.mh-text-capitalize {
+  text-transform: capitalize;
+}
+
 .mh-text-lowerline {
   text-transform: lowercase;
 }
@@ -1420,102 +1424,126 @@ body {
 }
 
 /*===========background-color==============*/
-
+.mh-before-bg-black::before,
+.mh-before-bg-black::after,
 .mh-bg-black-hover:hover,
 .mh-bg-black {
   background-color: #000 !important;
 }
-
+.mh-before-bg-white::before,
+.mh-before-bg-white::after,
 .mh-bg-white-hover:hover,
 .mh-bg-white {
   background-color: white !important;
 }
-
+.mh-before-bg-light::before,
+.mh-before-bg-light::after,
 .mh-bg-light-hover:hover,
 .mh-bg-light {
   background-color: #f8f9fa !important;
 }
-
+.mh-before-bg-blue::before,
+.mh-before-bg-blue::after,
 .mh-bg-blue-hover:hover,
 .mh-bg-blue {
   background-color: blue !important;
 }
-
+.mh-before-bg-green::before,
+.mh-before-bg-green::after,
 .mh-bg-green-hover:hover,
 .mh-bg-green {
   background-color: green !important;
 }
-
+.mh-before-bg-lightgreen::before,
+.mh-before-bg-lightgreen::after,
 .mh-bg-lightgreen-hover:hover,
 .mh-bg-lightgreen {
   background-color: lightgreen !important;
 }
-
+.mh-before-bg-limegreen::before,
+.mh-before-bg-limegreen::after,
 .mh-bg-limegreen-hover:hover,
 .mh-bg-limegreen {
   background-color: limegreen !important;
 }
-
+.mh-before-bg-orange::before,
+.mh-before-bg-orange::after,
 .mh-bg-orange-hover:hover,
 .mh-bg-orange {
   background-color: orange !important;
 }
-
+.mh-before-bg-darkgreen::before,
+.mh-before-bg-darkgreen::after,
 .mh-bg-darkgreen-hover:hover,
 .mh-bg-darkgreen {
   background-color: darkgreen !important;
 }
-
+.mh-before-bg-red::before,
+.mh-before-bg-red::after,
 .mh-bg-red-hover:hover,
 .mh-bg-red {
   background-color: red !important;
 }
-
+.mh-before-bg-skyblue::before,
+.mh-before-bg-skyblue::after,
 .mh-bg-skyblue-hover:hover,
 .mh-bg-skyblue {
   background-color: skyblue !important;
 }
-
+.mh-before-bg-darkblue::before,
+.mh-before-bg-darkblue::after,
 .mh-bg-darkblue-hover:hover,
 .mh-bg-darkblue {
   background-color: rgb(0, 140, 255) !important;
 }
-
+.mh-before-bg-maroon::before,
+.mh-before-bg-maroon::after,
 .mh-bg-maroon-hover:hover,
 .mh-bg-maroon {
   background-color: maroon !important;
 }
-
+.mh-before-bg-yellow::before,
+.mh-before-bg-yellow::after,
 .mh-bg-yellow-hover:hover,
 .mh-bg-yellow {
   background-color: yellow !important;
 }
-
+.mh-before-bg-lightgray::before,
+.mh-before-bg-lightgray::after,
 .mh-bg-lightgray-hover:hover,
 .mh-bg-lightgray {
   background-color: lightgray !important;
 }
-
+.mh-before-bg-gray::before,
+.mh-before-bg-gray::after,
 .mh-bg-gray-hover:hover,
 .mh-bg-gray {
   background-color: gray !important;
 }
-
+.mh-before-bg-gold::before,
+.mh-before-bg-gold::after,
 .mh-bg-gold-hover:hover,
 .mh-bg-gold {
   background-color: gold !important;
 }
-
+.mh-before-bg-aqua::before,
+.mh-before-bg-aqua::after,
 .mh-bg-aqua-hover:hover,
 .mh-bg-aqua {
   background-color: aqua !important;
 }
-
+.mh-before-bg-blank::before,
+.mh-before-bg-blank::after,
 .mh-bg-blank-hover:hover,
 .mh-bg-blank {
   background: transparent !important;
 }
-
+.mh-bg-none{
+  background: none;
+}
+.mh-outline-none{
+  outline: none;
+}
 /*================border==================*/
 .mh-border-radius-rounded {
   border-radius: 50% !important;
@@ -1524,7 +1552,9 @@ body {
 .mh-border-rounded-pill {
   border-radius: 50rem !important;
 }
-
+.mh-border-none{
+  border: none;
+}
 .mh-border {
   border: 1px solid #dee2e6 !important;
 }
@@ -3015,9 +3045,11 @@ body {
 .mh-box-shadow-rg {
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
+
 .mh-box-shadow-rh {
-	box-shadow: 0px 0px 10px #cecece !important;
+  box-shadow: 0px 0px 10px #cecece !important;
 }
+
 .mh-box-shadow-lg {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 }
@@ -3425,18 +3457,17 @@ nav.mh-blackpink {
 }
 
 nav.mh-blackpink h1 {
-  /* position: absolute; */
   width: 30%;
-  /*height: 100%;*/
   display: flex;
-  /* left: 5%; */
   float: left;
   list-style: none;
   color: #fff;
   margin-left: auto;
-  justify-content: space-around;
+  font-size: 30px;
   text-transform: uppercase;
   align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 nav.mh-blackpink ul {
@@ -4292,12 +4323,14 @@ color: #ddd;
 .mh-accordion-style-1 .mh-accordion-active:after {
   content: "\02796";
 }
+
 /*=============accordion-2===============*/
-.mh-accardion-style-2 .mh-accordion-body{
+.mh-accardion-style-2 .mh-accordion-body {
   cursor: pointer;
   margin: 5px 0;
 }
-.mh-accardion-style-2 .mh-accordion-title{
+
+.mh-accardion-style-2 .mh-accordion-title {
   background-color: #a77fb7;
   padding: 15px;
   display: flex;
@@ -4308,11 +4341,14 @@ color: #ddd;
   align-items: center;
   justify-content: space-between;
 }
-.mh-accardion-style-2 .mh-accordion-icon{
+
+.mh-accardion-style-2 .mh-accordion-icon {
   position: relative;
   width: 14px;
 }
-.mh-accardion-style-2 .mh-accordion-icon:before,.mh-accardion-style-2 .mh-accordion-icon:after{
+
+.mh-accardion-style-2 .mh-accordion-icon:before,
+.mh-accardion-style-2 .mh-accordion-icon:after {
   content: "";
   position: absolute;
   width: 14px;
@@ -4320,11 +4356,13 @@ color: #ddd;
   background-color: #fff;
   top: -1.5px;
 }
-.mh-accardion-style-2 .mh-accordion-icon:after{
+
+.mh-accardion-style-2 .mh-accordion-icon:after {
   transform: rotate(90deg);
-  transition:.3s linear;
+  transition: .3s linear;
 }
-.mh-accardion-style-2 .mh-accordion-content{
+
+.mh-accardion-style-2 .mh-accordion-content {
   background: #7676C7;
   color: #fff;
   line-height: 24px;
@@ -4335,24 +4373,29 @@ color: #ddd;
   height: 0px;
   transition: .3s ease;
 }
-.mh-accardion-style-2 .mh-accordion-body:target .mh-accordion-content{
+
+.mh-accardion-style-2 .mh-accordion-body:target .mh-accordion-content {
   height: auto;
   opacity: 1;
   padding: 15px;
   display: block;
   margin: 0px 0px 12px 0;
 }
-.mh-accardion-style-2 .mh-accordion-body:target .mh-accordion-icon:after{
+
+.mh-accardion-style-2 .mh-accordion-body:target .mh-accordion-icon:after {
   transform: rotate(0deg);
 }
-@media screen and (max-width: 768px){
-  .mh-accardion-style-2 .mh-accordion-title{
+
+@media screen and (max-width: 768px) {
+  .mh-accardion-style-2 .mh-accordion-title {
     font-size: 17px;
   }
-  .mh-accardion-style-2 .mh-accordion-content{
+
+  .mh-accardion-style-2 .mh-accordion-content {
     font-size: 14px;
   }
 }
+
 /*=============switch==============*/
 /* .mh-switch-1,
 .mh-switch-2{
@@ -4593,12 +4636,14 @@ color: #ddd;
   flex-wrap: wrap;
   align-content: center;
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
   .mh-about-1-light .mh-about-1-section:last-child {
     width: 100%;
     height: auto;
   }
 }
+
 .mh-about-1-light p {
   font-size: 20px;
 }
@@ -9943,10 +9988,12 @@ color: #ddd;
   font-weight: 900;
 }
 
-.mh-sidebar-inner .mh-sidebar-menu > li > ul > li.active > a, .mh-sidebar-inner .mh-sidebar-menu > li > ul > li > a:hover {
-	color: white !important;
-	background: #00abff8f;
+.mh-sidebar-inner .mh-sidebar-menu>li>ul>li.active>a,
+.mh-sidebar-inner .mh-sidebar-menu>li>ul>li>a:hover {
+  color: white !important;
+  background: #00abff8f;
 }
+
 /**
 *tooltip*/
 .mh-tooltip-style-1 .mh-tooltip {
@@ -9995,6 +10042,7 @@ color: #ddd;
   margin-right: 10px;
 
 }
+
 .mh-tooltip-style-1 .mh-tooltip-right {
   top: 50%;
   left: 100%;
@@ -10013,18 +10061,19 @@ color: #ddd;
 }
 
 .mh-tooltip-style-1 .mh-tooltip-bottom:after {
-bottom: 100%;
-border-top-width: 0;
-border-bottom-color: rgba(0, 0, 0, 0.8) !important;
-transform: translateX(-50%);
-left: 50%;
+  bottom: 100%;
+  border-top-width: 0;
+  border-bottom-color: rgba(0, 0, 0, 0.8) !important;
+  transform: translateX(-50%);
+  left: 50%;
 }
+
 .mh-tooltip-style-1 .mh-tooltip-top:after {
   top: 100%;
-border-bottom-width: 0;
-border-top-color: rgba(0, 0, 0, 0.8) !important;
-transform: translateX(-50%);
-left: 50%;
+  border-bottom-width: 0;
+  border-top-color: rgba(0, 0, 0, 0.8) !important;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 .mh-tooltip-style-1 .mh-tooltip-left:after {
@@ -10033,6 +10082,7 @@ left: 50%;
   border-right-width: 0;
   border-left-color: rgba(0, 0, 0, 0.8) !important;
 }
+
 .mh-tooltip-style-1 .mh-tooltip-right:after {
   top: calc(50% - 5px);
   left: -6%;
