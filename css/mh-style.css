@@ -1425,91 +1425,91 @@ body {
 
 /*===========background-color==============*/
 .mh-before-bg-black::before,
-.mh-before-bg-black::after,
+.mh-after-bg-black::after,
 .mh-checked-bg-black:checked,
 .mh-bg-black-hover:hover,
 .mh-bg-black {
   background-color: #000 !important;
 }
 .mh-before-bg-white::before,
-.mh-before-bg-white::after,
+.mh-after-bg-white::after,
 .mh-checked-bg-white:checked,
 .mh-bg-white-hover:hover,
 .mh-bg-white {
   background-color: white !important;
 }
 .mh-before-bg-light::before,
-.mh-before-bg-light::after,
+.mh-after-bg-light::after,
 .mh-checked-bg-light:checked,
 .mh-bg-light-hover:hover,
 .mh-bg-light {
   background-color: #f8f9fa !important;
 }
 .mh-before-bg-blue::before,
-.mh-before-bg-blue::after,
+.mh-after-bg-blue::after,
 .mh-bg-blue-hover:hover,
 .mh-checked-bg-blue:checked,
 .mh-bg-blue {
   background-color: blue !important;
 }
 .mh-before-bg-green::before,
-.mh-before-bg-green::after,
+.mh-after-bg-green::after,
 .mh-checked-bg-green:checked,
 .mh-bg-green-hover:hover,
 .mh-bg-green {
   background-color: green !important;
 }
 .mh-before-bg-lightgreen::before,
-.mh-before-bg-lightgreen::after,
+.mh-after-bg-lightgreen::after,
 .mh-bg-lightgreen-hover:hover,
 .mh-checked-bg-lightgreen:checked,
 .mh-bg-lightgreen {
   background-color: lightgreen !important;
 }
 .mh-before-bg-limegreen::before,
-.mh-before-bg-limegreen::after,
+.mh-after-bg-limegreen::after,
 .mh-checked-bg-limegreen:checked,
 .mh-bg-limegreen-hover:hover,
 .mh-bg-limegreen {
   background-color: limegreen !important;
 }
 .mh-before-bg-orange::before,
-.mh-before-bg-orange::after,
+.mh-after-bg-orange::after,
 .mh-checked-bg-orange:checked,
 .mh-bg-orange-hover:hover,
 .mh-bg-orange {
   background-color: orange !important;
 }
 .mh-before-bg-darkgreen::before,
-.mh-before-bg-darkgreen::after,
+.mh-after-bg-darkgreen::after,
 .mh-checked-bg-darkgreen:checked,
 .mh-bg-darkgreen-hover:hover,
 .mh-bg-darkgreen {
   background-color: darkgreen !important;
 }
 .mh-before-bg-red::before,
-.mh-before-bg-red::after,
+.mh-after-bg-red::after,
 .mh-bg-red-hover:hover,
 .mh-checked-bg-red:checked,
 .mh-bg-red {
   background-color: red !important;
 }
 .mh-before-bg-skyblue::before,
-.mh-before-bg-skyblue::after,
+.mh-after-bg-skyblue::after,
 .mh-bg-skyblue-hover:hover,
 .mh-checked-bg-skyblue:checked,
 .mh-bg-skyblue {
   background-color: skyblue !important;
 }
 .mh-before-bg-darkblue::before,
-.mh-before-bg-darkblue::after,
+.mh-after-bg-darkblue::after,
 .mh-checked-bg-darkblue:checked,
 .mh-bg-darkblue-hover:hover,
 .mh-bg-darkblue {
   background-color: rgb(0, 140, 255) !important;
 }
 .mh-before-bg-maroon::before,
-.mh-before-bg-maroon::after,
+.mh-after-bg-maroon::after,
 .mh-bg-maroon-hover:hover,
 .mh-checked-bg-maroon:checked,
 .mh-bg-maroon {
@@ -1517,27 +1517,27 @@ body {
 }
 .mh-before-bg-yellow::before,
 .mh-checked-bg-yellow:checked,
-.mh-before-bg-yellow::after,
+.mh-after-bg-yellow::after,
 .mh-bg-yellow-hover:hover,
 .mh-bg-yellow {
   background-color: yellow !important;
 }
 .mh-before-bg-lightgray::before,
-.mh-before-bg-lightgray::after,
+.mh-after-bg-lightgray::after,
 .mh-bg-lightgray-hover:hover,
 .mh-checked-bg-lightgray:checked,
 .mh-bg-lightgray {
   background-color: lightgray !important;
 }
 .mh-before-bg-gray::before,
-.mh-before-bg-gray::after,
+.mh-after-bg-gray::after,
 .mh-bg-gray-hover:hover,
 .mh-checked-bg-gray:checked,
 .mh-bg-gray {
   background-color: gray !important;
 }
 .mh-before-bg-gold::before,
-.mh-before-bg-gold::after,
+.mh-after-bg-gold::after,
 .mh-checked-bg-gold:checked,
 .mh-bg-gold-hover:hover,
 .mh-bg-gold {
@@ -1545,13 +1545,13 @@ body {
 }
 .mh-before-bg-aqua::before,
 .mh-checked-bg-aqua:checked,
-.mh-before-bg-aqua::after,
+.mh-after-bg-aqua::after,
 .mh-bg-aqua-hover:hover,
 .mh-bg-aqua {
   background-color: aqua !important;
 }
 .mh-before-bg-blank::before,
-.mh-before-bg-blank::after,
+.mh-after-bg-blank::after,
 .mh-checked-bg-black:checked,
 .mh-bg-blank-hover:hover,
 .mh-bg-blank {
