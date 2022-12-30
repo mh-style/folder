@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="https://mh-style.github.io/mh-style/mh-style.css">
+    <style>
+        
+    </style>
+    <!-- <style>
+        .clock {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #091924;
+            min-height: 100vh;
+        }
+
+        .mh-analog-clock {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-size: cover;
+            border-radius: 50%;
+            border: 4px solid #091921;
+            box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .mh-analog-clock:before {
+            content: "";
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: #ddd;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .mh-analog-clock .mh-hour,
+        .mh-analog-clock .mh-minute,
+        .mh-analog-clock .mh-second {
+            position: absolute;
+        }
+
+        .mh-analog-clock .hr,
+        .mh-analog-clock .mn,
+        .mh-analog-clock .sc {
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .mh-analog-clock .hr {
+            width: 180px;
+            height: 180px;
+        }
+
+        .mh-analog-clock .mn {
+            width: 210px;
+            height: 210px;
+        }
+
+        .mh-analog-clock .sc {
+            width: 230px;
+            height: 230px;
+        }
+
+        .mh-analog-clock .hr:before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 85px;
+            background: #00c8ff;
+            border-radius: 6px 6px 0 0;
+        }
+
+        .mh-analog-clock .mn:before {
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 100px;
+            background: #fff;
+            border-radius: 6px 6px 0 0;
+        }
+
+        .mh-analog-clock .sc:before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 155px;
+            background: #fff;
+            border-radius: 6px 6px 0 0;
+        }
+
+        .mh-analog-clock .mh-hour {
+            font-size: 35px;
+            color: #fff;
+            font-weight: 700;
+            position: absolute;
+        }
+
+        .mh-analog-clock .mh-hourl {
+            color: #fff;
+            font-weight: 900;
+            font-size: 19px;
+            position: absolute;
+        }
+
+        .mh-analog-clock .mh-hour12 {
+            transform: translate(-50%, 50%);
+            top: 0px;
+            left: 50%;
+        }
+
+        .mh-analog-clock .mh-hour9 {
+            left: 0;
+            top: 50%;
+            transform: translate(100%, -50%);
+        }
+
+        .mh-analog-clock .mh-hour6 {
+            left: 50%;
+            transform: translate(-50%, -50%);
+            bottom: 0;
+        }
+
+        .mh-analog-clock .mh-hour3 {
+            right: 0;
+            top: 50%;
+            transform: translate(-100%, -50%);
+        }
+
+        .mh-analog-clock .mh-hour11 {
+            top: 15%;
+            left: 28%;
+            transform: translate(100%, -50%)rotate(-30deg);
+            font-weight: 900;
+        }
+
+        .mh-analog-clock .mh-hour10 {
+            top: 30%;
+            left: 14%;
+            transform: translate(0%, -50%)rotate(-60deg);
+            font-weight: 900;
+        }
+
+        .mh-analog-clock .mh-hour7 {
+            bottom: 15%;
+            left: 30%;
+            transform: translate(-30%, 50%)rotate(30deg);
+        }
+
+        .mh-analog-clock .mh-hour8 {
+            bottom: 25%;
+            left: 15%;
+            transform: translate(-50%, -50%)rotate(60deg);
+        }
+
+        .mh-analog-clock .mh-hour5 {
+            bottom: 15%;
+            right: 30%;
+            transform: translate(100%, 60%)rotate(-30deg);
+        }
+
+        .mh-analog-clock .mh-hour4 {
+            bottom: 25%;
+            right: 15%;
+            transform: translate(50%, -50%)rotate(-60deg);
+        }
+
+        .mh-analog-clock .mh-hour1 {
+            top: 15%;
+            right: 28%;
+            transform: translate(0%, -50%)rotate(30deg);
+            font-weight: 900;
+        }
+
+        .mh-analog-clock .mh-hour2 {
+            top: 30%;
+            right: 14%;
+            transform: translate(50%, -60%)rotate(60deg);
+            font-weight: 900;
+        } 
+    </style>-->
+</head>
+
+<body>
+
+    <div class="mh-digital-clock mh-fs-40"></div>
+    <div class="clock">
+        <div class="mh-analog-clock">
+        </div>
+    </div>
+
+
+    <script src="https://mh-style.github.io/mh-style/mhstyle.js"></script>
+    <!-- <script>
+         let analog_clock = document.querySelector('.mh-analog-clock');
+         let analog = '<span class="mh-hour12 mh-hour">12</span>' + '<span class="mh-hour11 mh-hourl">|</span>' +
+             '<span class="mh-hour10 mh-hourl">|</span>' + '<span class="mh-hour mh-hour9">9</span>' +
+             '<span class="mh-hour8 mh-hourl">|</span>' + '<span class="mh-hour7 mh-hourl">|</span>' +
+             '<span class="mh-hour mh-hour6">6</span>' + '<span class="mh-hour5 mh-hourl">|</span>' +
+             '<span class="mh-hour4 mh-hourl">|</span>' + '<span class="mh-hour mh-hour3">3</span>' +
+             '<span class="mh-hour2 mh-hourl">|</span>' + '<span class="mh-hour1 mh-hourl">|</span>' + '<span class="mh-hour">' +
+             '<span class="hr" id="hr">' +
+             '</span>' + '</span>' + '<span class="mh-minute">' + '<span class="mn" id="mn">' + '</span>' + '</span>' +
+             '<span class="mh-second">' + '<span class="sc" id="sc">' + '</span>' + '</span>';
+         analog_clock.innerHTML = analog;
+         let hr = analog_clock.querySelector('#hr');
+         let mn = analog_clock.querySelector('#mn');
+         let sc = analog_clock.querySelector('#sc');
+
+         setInterval(() => {
+             let deg = 6;
+             let day = new Date();
+             let hh = day.getHours() * 30;
+             let mm = day.getMinutes() * deg;
+             let ss = day.getSeconds() * deg;
+
+             hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+             mn.style.transform = `rotateZ(${mm}deg)`;
+             sc.style.transform = `rotateZ(${ss}deg)`;
+         });
+    </script> -->
+</body>
+
+</html>

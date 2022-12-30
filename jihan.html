@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- CSS Part -->
+    <style>
+        .heading {
+            color: red;
+        }
+        
+        .button {
+            font-size: 18px;
+        }
+        
+        .skyblue {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+            Thanks to trying to help me
+    If <h1> tag's "data-mh" and <button> tag's id has similar attribute
+    than if I click on the button the button background-color will change.
+    And the attribute will print on the P tag. My code is working with first
+    button but it's not working with the second or othersbuttons.
+        /* how can do it by loop */
+            Please Help Me 
+    -->
+    <!-- HTML part start from here -->
+    <!-- <h1 class="heading" data-mh="item1">Hello World</h1>
+    <button class="button" id="item1">Click Here</button>
+    
+    <h1 class="heading" data-mh="item2">Hello World</h1>
+    <button class="button" id="item2">Click Here</button>
+        
+    <h1 class="heading" data-mh="item3">Hello World</h1> 
+    <button class="button" id="item3">Click Here</button>
+
+    <p id="demo"></p> -->
+    <!-- This Paragraph tag will print my attribute -->
+
+    <!-- HTML End -->
+
+    <!-- <script>
+        let x = document.querySelectorAll(".heading"); // This variable is to get Attribute of "data-mh"
+        let y = document.querySelectorAll(".button"); // Button selection. By clicking this button I will get print my Attribute
+ 
+        const onClick = (event) => {
+            console.log(event.target.id);
+            for(var i=0;i<x.length;i++){
+                if(x[i].getAttribute('data-mh') === event.target.getAttribute('id')){
+                    x[i].classList.toggle('skyblue');
+                    document.getElementById("demo").innerHTML = x[i].getAttribute('data-mh') +" "+event.target.id; // This line of code will print my Attribute on P tag
+                    
+                }
+                else if(x[i].classList.contains('skyblue')){
+                     x[i].classList.remove('skyblue');
+                 }
+            }
+            
+        }
+        window.addEventListener('click', onClick);
+
+    </script> -->
+
+    
+<h1 class="heading" data-mh="item1">Hello World</h1>
+<button class="button" id="item1" onclick="text(this)">Click Here</button>
+
+<h1 class="heading" data-mh="item2">Hello World</h1>
+<button class="button" id="item2" onclick="text(this)">Click Here</button>
+
+<h1 class="heading" data-mh="item3">Hello World</h1> 
+<button class="button" id="item3" onclick="text(this)">Click Here</button>
+
+<p id="demo"></p>
+<!-- This Paragraph tag will print my attribute -->
+
+<!-- HTML End -->
+
+<script>
+    var x = document.querySelectorAll(".heading"); // This variable is to get Attribute of "data-mh"
+    var y = document.querySelectorAll(".button"); // Button selection. By clicking this button I will get print my Attribute
+
+
+    
+   // console.log('Z', z);
+    
+    
+    function text(e) {
+
+        //If X (ID) and Z (Attribute) matching then working this Condition
+        for(let i=0;i<x.length;i++){
+
+            if(x[i].getAttribute('data-mh')=== e.id){
+                e.classList.toggle("skyblue");
+                document.getElementById("demo").innerHTML = x[i].getAttribute('data-mh')+" "+e.id; // This line of code will print my Attribute on P tag
+            }
+            else if(y[i].classList.contains('skyblue')){
+                y[i].classList.remove('skyblue');
+            }
+        }
+    }
+</script>
+</body>
+
+</html>

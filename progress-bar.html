@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./css/mh-style.css" />
+	<style>
+		/* body {font-family: 'Roboto'; background-color:#fefefe; padding:2em;}
+		.mh-circlechart {
+		 	float: left;
+			padding: 20px;
+		}
+		.circle-chart {
+	width: 150px;
+	height: 150px;
+  }
+  
+  .circle-chart__circle {
+	stroke: #00acc1;
+	stroke-width: 2;
+	stroke-linecap: square;
+	fill: none;
+	animation: circle-chart-fill 2s reverse; 
+	transform: rotate(-90deg);
+	transform-origin: center;
+  }
+  
+  
+  .circle-chart__circle--negative {
+	transform: rotate(-90deg) scale(1,-1);
+  }
+  
+  .circle-chart__background {
+	stroke: #efefef;
+	stroke-width: 2;
+	fill: none; 
+  }
+  
+  .circle-chart__info {
+	animation: circle-chart-appear 2s forwards;
+	opacity: 0;
+	transform: translateY(0.3em);
+  }
+  
+  .circle-chart__percent {
+	alignment-baseline: central;
+	text-anchor: middle;
+	font-size: 8px;
+  }
+  
+  .circle-chart__subline {
+	  alignment-baseline: central;
+	  text-anchor: middle;
+	  font-size: 3px;
+  }
+  
+  .success-stroke {
+	stroke: #00C851;
+  }
+  
+  .warning-stroke {
+	stroke: #ffbb33;
+  }
+  
+  .danger-stroke {
+	stroke: #ff4444;
+  }
+  
+  @keyframes circle-chart-fill {
+	to { stroke-dasharray: 0 100; }
+  }
+  
+  @keyframes circle-chart-appear {
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+   */
+	</style>
+</head>
+
+<body>
+		<div class="mh-circlechart" data-percentage="65">Html</div>
+		<div class="mh-circlechart" data-percentage="30">Css</div>
+		<div class="mh-circlechart" data-percentage="-85">Js</div>
+
+	<br>
+	<div class="mh-progress-s1">
+		<div class="mh-progress mh-progress-striped">
+			<div class="mh-progress-bar mh-progress-bar-danger" style="width: 10%">
+				<span>10% Complete</span>
+			</div>
+		</div>
+		<div class="mh-progress mh-progress-striped">
+			<div class="mh-progress-bar mh-progress-bar-danger" style="width: 50%">
+				<span>50% Complete</span>
+			</div>
+		</div>
+		<div class="mh-progress mh-progress-striped">
+			<div class="mh-progress-bar mh-progress-bar-danger" style="width: 70%">
+				<span>70% Complete</span>
+			</div>
+		</div>
+		<div class="mh-progress mh-progress-striped">
+			<div class="mh-progress-bar mh-progress-bar-danger" style="width: 100%">
+				<span>100% Complete</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="mh-progress-s2 mh-progress-s1">
+		<div class="mh-progress">
+			<div class="mh-progress-bar mh-progress-bar-danger" mh-percentage="60"></div>
+		</div>
+	</div>
+.mh-progress-s2 .mh-progress .mh-progress-bar
+	<script src="./js/jquery-3.5.1.js"></script>
+
+	<script src="./js/mhstyle.js"></script>
+	<script>
+		let progress_s2 = document.querySelector(".mh-progress-s2 .mh-progress .mh-progress-bar");
+		let progress_s2_att = progress_s2.getAttribute("mh-percentage");
+		progress_s2.style.width = progress_s2_att+"%";
+	</script>
+
+	<script>
+		$('.mh-circlechart').mh_circlechart();
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./css/mh-style.css" />
+
+	<style>
+		.mh-switch-text .mh-switch-input {
+			display: none;
+		}
+
+		.mh-switch-text .mh-switch-input+label {
+			display: inline-block;
+			height: 60px;
+			width: 200px;
+			position: relative;
+			font-size: 20px;
+			border: 4px solid #ddd;
+			padding: 0;
+			margin: 0;
+			cursor: pointer;
+			box-sizing: border-box;
+			transition: all 0.3s ease;
+		}
+
+		.mh-switch-text .mh-switch-input+label::before {
+			position: absolute;
+			top: 4px;
+			height: 44px;
+			width: 44px;
+			content: "";
+			transition: all 0.3s ease;
+			z-index: 3;
+		}
+
+		.mh-switch-text .mh-switch-input+label::after {
+			position: absolute;
+			z-index: 2;
+			width: 140px;
+			text-align: center;
+			text-transform: uppercase;
+			top: 50%;
+			transform: translateY(-50%);
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+
+		.mh-switch-text .mh-switch-input+label.mh-rounded {
+			border-radius: 30px;
+		}
+
+		.mh-switch-text .mh-switch-input+label.mh-rounded::before {
+			border-radius: 50%;
+		}
+
+		.mh-switch-text .mh-switch-input+label.android {
+			border-radius: 30px;
+			height: 20px;
+			width: 150px;
+			border-width: 0;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.mh-switch-text .mh-switch-input+label.android::before {
+			border-radius: 50%;
+			top: -20px;
+			height: 60px;
+			width: 60px;
+			background-color: #fff;
+			box-shadow: 0 0 15px #333;
+
+		}
+
+		.mh-switch-text .mh-switch-input+label.android::after {
+			display: none;
+		}
+
+		.mh-switch-text .mh-switch-input+label.android:active:after {
+			box-shadow: 0 0 2px 15px rgba(48, 48, 48, 0.7);
+			transition: all 0.1s ease;
+		}
+
+		.mh-switch-text .mh-switch-input:not(:checked)+label {
+			background-color: transparent;
+			text-align: right;
+		}
+
+		.mh-switch-text .mh-switch-input:not(:checked)+label::after {
+			content: attr(mh-unchecked);
+			right: 0;
+			left: auto;
+			opacity: 1;
+			color: var(--mh-primary-color);
+		}
+
+		.mh-switch-text .mh-switch-input:not(:checked)+label::before {
+			left: 4px;
+			background-color: #ddd;
+		}
+
+		.mh-switch-text .mh-switch-input:not(:checked)+label.android {
+			background-color: #ddd;
+			border-color: #ddd;
+
+		}
+
+		.mh-switch-text .mh-switch-input:not(:checked)+label.android::before {
+			left: 0;
+			background-color: white;
+		}
+
+		.mh-switch-text .mh-switch-input:checked+label {
+			text-align: left;
+			border-color: var(--mh-primary-color);
+		}
+
+		.mh-switch-text .mh-switch-input:checked+label::after {
+			content: attr(mh-checked);
+			left: 4px;
+			right: auto;
+			opacity: 1;
+			color: #ddd;
+		}
+
+		.mh-switch-text .mh-switch-input:checked+label::before {
+			left: 144px;
+			background-color: white;
+		}
+
+		.mh-switch-text .mh-switch-input:checked+label.android {
+			background-color: var(--mh-primary-color);
+			border-color: var(--mh-primary-color);
+		}
+
+		.mh-switch-text .mh-switch-input:checked+label.android::before {
+			left: 110px;
+			right: auto;
+		}
+	</style>
+</head>
+
+<body class="mh-container">
+	<div class="mh-switch mh-switch-1">
+		<input class="mh-switch-input" type="checkbox" name="" />
+	</div>
+	<div class="mh-switch mh-switch-2">
+		<input class="mh-switch-input" type="checkbox" value="Switch" name="" />
+	</div>
+	<div class="mh-switch mh-switch-3">
+		<input class="mh-switch-input" type="checkbox" name="" />
+	</div>
+	<div class="mh-switch mh-switch-4">
+		<input class="mh-checked-red mh-switch-input" type="checkbox" name="" />
+	</div>
+	<br><br><br>
+	<div class="mh-switch-text">
+		<input type="checkbox" class="mh-switch-input" id="default">
+		<label for="default" mh-checked="Checked" class="mh-border-red mh-before-bg-primary" mh-unchecked="Unchecked"></label>
+	</div>
+	<div class="mh-switch-text">
+		<input type="checkbox" class="mh-switch-input" id="rounded">
+		<label for="rounded" mh-checked="Checked" class="mh-rounded mh-before-bg-primary"
+			mh-unchecked="Unchecked"></label>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="stylesheet" href="./css/mh-style.css" />
+	<link rel="stylesheet" href="./css/mhstyle-icon.css" />
+	<style>
+		@import url("./css/mhstyle-icon.css");
+
+		/***
+		.mh-radio-s2 label,
+		.mh-checkbox-s2 label {
+			display: flex;
+			align-items: center;
+			line-height: 40px;
+		}
+
+		.mh-radio-s2 .mh-option-input:checked::after,
+		.mh-checkbox-s2 .mh-option-input:checked::after {
+			animation: click-wave 0.75s;
+			background: #40e0d0;
+			content: '';
+			display: block;
+			position: relative;
+			z-index: 100;
+		}
+		.mh-radio-s2 .mh-option-input::after,
+		.mh-radio-s2 .mh-option-input:checked::before,
+		.mh-radio-s2 .mh-option-input {
+			border-radius: 50%;
+		}
+		@keyframes click-wave {
+			0% {
+				height: 20px;
+				width: 20px;
+				opacity: 0.35;
+				position: relative;
+			}
+
+			100% {
+				height: 200px;
+				width: 200px;
+				margin-left: -80px;
+				margin-top: -80px;
+				opacity: 0;
+			}
+		}
+		.mh-radio-s2 .mh-option-input,
+		.mh-checkbox-s2 .mh-option-input {
+			appearance: none;
+			position: relative;
+			top: 0px;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			transition: all 0.15s ease-out 0s;
+			background: #cbd1d8;
+			border: none;
+			color: #ffffff;
+			cursor: pointer;
+			display: inline-block;
+			margin-right: 0.5rem;
+			outline: none;
+			z-index: 1000;
+		}
+		.mh-radio-s2 .mh-option-input,
+		.mh-checkbox-s2 .mh-option-input {
+			height: 25px;
+			width: 25px;
+		}
+		.mh-radio-s2 .mh-option-input:hover ,
+		.mh-checkbox-s2 .mh-option-input:hover {
+			background-color: darkorange;
+		}
+		.mh-checkbox-s2 .mh-option-input:checked::before {
+			height: 25px;
+			width: 25px;
+			line-height: 25px;
+			font-size: 18px;
+		}
+		.mh-radio-s2 .mh-option-input:checked::before {
+			position: absolute;
+			font-size: 24px;
+			height: 25px;
+			color: deepskyblue;
+			width: 25px;
+			line-height: 27px;
+			background-color: #cbd1d8;
+			content: '\f839';
+			font-weight: 900;
+			display: inline-block;
+			text-align: center;
+		}
+		.mh-checkbox-s2 .mh-option-input:checked::before {
+			position: absolute;
+			content: '\ec4c';
+			font-weight: 900;
+			display: inline-block;
+			text-align: center;
+			background-color: deepskyblue;
+		}*/
+	</style>
+</head>
+
+<body class="mh-container">
+	<form class="mh-checkbox">
+		<input type="checkbox" id="fruit-1" name="fruit-1" />
+		<label for="fruit-1">Apple</label>
+		<input type="checkbox" id="fruit-2" name="fruit-2" />
+		<label for="fruit-2">Apple</label>
+		<input type="checkbox" id="fruit-3" name="fruit-3" disabled />
+		<label for="fruit-3">Apple</label>
+		<input type="checkbox" id="fruit-4" name="fruit-4" checked disabled />
+		<label for="fruit-4">Apple</label>
+	</form>
+	<form class="mh-checkbox-s1 mh-ml-6">
+		<input type="checkbox" id="check1" name="check" />
+		<label for="check1">Jihan</label>
+	</form>
+
+
+	<div class="mh-checkbox-s2">
+		<label>
+			<input type="checkbox" name="" class="mh-option-input" checked>
+			HTML / CSS3
+		</label>
+		<label>
+			<input type="checkbox" name="" class="mh-option-input">
+			Javascript
+		</label>
+		<label>
+			<input type="checkbox" name="" class="mh-option-input">
+			MH-style
+		</label>
+	</div>
+	<div class="mh-radio-s2">
+		<label>
+			<input type="radio" name="example" class="mh-option-input" checked>
+			Media query
+		</label>
+		<label>
+			<input type="radio" name="example" class="mh-option-input">
+			Responsives
+		</label>
+		<label>
+			<input type="radio" name="example" class="mh-option-input">
+			Web Designs
+		</label>
+	</div>
+
+
+</body>
+
+</html>

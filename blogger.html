@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger Theme</title>
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <link rel="stylesheet" href="./css/mhstyle-icon.css">
+</head>
+
+<body>
+
+    <div class="mh-container mh-bg-green">
+        <div class="mh-row">
+            <div class="header mh-col-12">
+                <div class="mh-col-lg-9 mh-col-md-9 mh-col-sm-9 mh-col-xs-12">
+                    <h2>Header</h2>
+                    <span>.mh-col-xs-12</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mh-container mh-bg-yellow">
+        <div class="mh-row">
+            <div class="blog-content">
+                <div class="mh-col-lg-12 mh-col-md-12 mh-col-sm-12 mh-col-xs-12 ">
+                    <h2>Blog Content</h2>
+                    <span>mh-col-lg-9 mh-col-md-9 mh-col-sm-9 mh-col-xs-12</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mh-container mh-bg-primary">
+        <div class="mh-row">
+            <div class="footer">
+                <div class="mh-col-lg-9 mh-col-md-9 mh-col-sm-9 mh-col-xs-12">
+                    <h2>Footer</h2>
+                    <span>mh-col-lg-9 mh-col-md-9 mh-col-sm-9 mh-col-xs-12</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <b:section class='Jihan' id='jihan1' name='Jihan'> <!-- create section start -->
+        <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' visible='true'><!--create widget start-->
+
+                    
+        <a expr:href='data:post.url'><data:post.title/></a> <!-- post title -->
+
+
+        <b:if cond='data:post.firstImageUrl'> <!-- Post first Image start -->
+            <div class='mh-thumbnail'>
+            <img expr:src='data:post.firstImageUrl'/>
+            </div>
+          </b:if><!-- Post first Image end -->
+          
+          <data:post.body/> <!--post body-->
+          
+        <b:if cond='data:post.dateHeader'> <!-- post Date  -->
+            <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
+          </b:if>
+
+        </b:widget> 
+    </b:section><!-- create section end -->
+
+
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/mhstyle.js"></script>
+</body>
+
+</html>

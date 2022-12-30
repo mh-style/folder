@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MH-Style</title>
+    <link rel="stylesheet" href="../css/mh-style.css">
+    <link rel="stylesheet" href="../css/mhstyle-icon.min.css">
+    <link rel="stylesheet" href="./css/mh-new-css.css">
+</head>
+
+<body class="single-code-post">
+    <nav class="mh-navbar mh-navbar-expand-lg mh-p-fi-top mh-w-100 mh-navbar-dark mh-bg-skyblue">
+        <div class="mh-container-fluid">
+            <a href="/" class="mh-navbar-logo"><img src="https://mh-style.github.io/mh-style/mhstyle-black.svg"
+                    class="mh-img-fluid"></a>
+            <button class="mh-navbar-toggle" mh-navtoggle="navbarMenu">
+                <i class="mh mhi-bars"></i>
+            </button>
+            <form class="mh-field-group mh-ml-2-lg">
+                <input type="search" name="search" placeholder="Search"
+                    class="mh-form-field mh-bg-blank mh-border-right-radius-0 mh-border-right-0">
+                <button class="mh-btn mh-btn-primary mh-border-left-radius-0">Search</button>
+            </form>
+            <div class="mh-navbar-collapse mh-collapse" id="navbarMenu">
+                <ul class="mh-navbar-nav mh-m-auto">
+                    <li class="mh-item">
+                        <a href="home.html" class="mh-link">Home</a>
+                    </li>
+                    <li class="mh-item">
+                        <a href="#" class="mh-link">About</a>
+                    </li>
+                    <li class="mh-item">
+                        <a href="index.html" class="mh-link">Blog</a>
+                    </li>
+                    <li class="mh-item">
+                        <a href="#" class="mh-link">Service</a>
+                    </li>
+                    <li class="mh-item">
+                        <a href="#" class="mh-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="mh-btn mh-btn-dark-outline mh-color-black mh-color-white-hover"><i
+                    class="mh mhi-download"></i> Download</a>
+        </div>
+    </nav>
+
+    <main class="main-content-body mh-clearfix">
+        <aside id="sidebar" class="mh-p-0 sidebar-1 mh-clearfix">
+            <nav class="mh-navbar mh-navbar-dark mh-bg-success">
+
+                <div class="mh-navbar-collapse" id="navbarMenu1">
+
+                    <ul class="mh-navbar-nav mh-justify-content-end">
+                        <li class="mh-item">
+                            <a href="home.html" target="myiframe" class="mh-link">Home</a>
+                        </li>
+                        <li class="mh-item">
+                            <a href="page1.html" target="myiframe" class="mh-link">About</a>
+                        </li>
+                        <li class="mh-item">
+                            <a href="page2.html" target="myiframe" class="mh-link">About</a>
+                        </li>
+                        <li class="mh-item">
+                            <a href="#" class="mh-link">About</a>
+                        </li>
+                        <li class="mh-item">
+                            <a href="#" class="mh-link">About</a>
+                        </li>
+                        <li class="mh-item">
+                            <a href="#" class="mh-link">About</a>
+                        </li>
+                        <li class="mh-item">
+                            <a href="#" class="mh-link">About</a>
+                        </li>
+                        <li class="mh-item">
+                            <a href="" class="mh-link">Blog</a>
+                        </li>
+                        <li class="mh-item mh-dropdown" mh-dropdown="drop1">
+                            <a href="#" class="mh-link mh-dropdown-button">blog</a>
+                            <ul class="mh-dropdown-menu" id="drop1">
+                                <li><a class="mh-dropdown-item" href="#">Item</a></li>
+                                <li>
+                                    <a class="mh-dropdown-item" href="#">Item</a>
+                                </li>
+                                <li><a class="mh-dropdown-item" href="#">Item</a></li>
+                            </ul>
+                        </li>
+                        <li class="mh-item mh-dropdown" mh-dropdown="drop2">
+                            <a href="#" class="mh-link mh-dropdown-button">blog</a>
+                            <ul class="mh-dropdown-menu" id="drop2">
+                                <li><a class="mh-dropdown-item" href="#">Item</a></li>
+                                <li>
+                                    <a class="mh-dropdown-item" href="#">Item</a>
+                                </li>
+                                <li><a class="mh-dropdown-item" href="#">Item</a></li>
+                            </ul>
+                        </li>
+                        <li class="mh-item">
+                            <a href="#" class="mh-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        <div class="post mh-clearfix" id="post">
+            <button class="btn-run" onclick="funrun()">Run</button>
+            <iframe name="myiframe" src="./home.html" frameborder="0" onload="iframeLoaded(this)" id="myiframe"></iframe>
+            <!-- <article class="mh-clearfix">
+                <h1 class="post-title">Heading</h1>
+                <p class="post-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium iusto sit
+                    dicta. Nulla numquam aperiam aut quod atque eligendi ad facere consectetur fuga nihil, veniam
+                    praesentium incidunt consequatur ut deleniti officia quaerat ratione repellendus sunt quidem vitae
+                    odit rem fugiat. Dolorem voluptatem inventore quasi nisi ducimus mollitia delectus blanditiis rerum
+                    fugiat. Vitae odio, quod ea hic beatae veritatis labore dolor voluptas illum recusandae consequuntur
+                    culpa libero exercitationem porro est aliquid modi? Ea maiores aperiam pariatur neque nobis sapiente
+                    laboriosam quo, quod deserunt ipsam nisi tenetur minus beatae commodi at asperiores explicabo
+                    reiciendis ipsum delectus quas quasi. Magnam aspernatur id ipsum.</p>
+                <div class="post-preview">
+                    <div class="mh-alert mh-alert-s1">
+                        A simple success alert—check it out!
+                    </div>
+                    <div class="mh-alert mh-alert-s2">
+                        A simple success alert—check it out!
+                    </div>
+                    <div class="mh-alert mh-alert-s3">
+                        A simple success alert—check it out!
+                    </div>
+                    <div class="mh-alert mh-alert-s4">
+                        A simple success alert—check it out!
+                    </div>
+                    <div class="mh-alert mh-alert-s5">
+                        A simple success alert—check it out!
+                    </div>
+                    <div class="mh-alert mh-alert-s6">
+                        A simple success alert—check it out!
+                    </div>
+                    <div class="mh-alert mh-alert-s7">
+                        A simple success alert—check it out!
+                    </div>
+                    <div class="mh-alert mh-alert-close mh-alert-s5">
+                        A simple success alert—check it out!
+                        <div class="mh-close">X</div>
+                    </div>
+                    <div class="mh-alert mh-alert-close mh-alert-s4">
+                        A simple success alert—check it out!
+                        <div class="mh-close">X</div>
+                    </div>
+                </div>
+                <div class="post-copyboard">
+                    <button class="copybutton" mh-copyboard-target="#copyID">Copy</button>
+                    <div class="post-copyboard-body" id="copyID">
+                        <pre>
+                        &lt;div&gt;&lt;/div&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam vero autem iusto distinctio dolore veniam alias quasi expedita dolorem eius dolor nulla sequi, mollitia neque accusantium libero explicabo ex, blanditiis voluptates ullam placeat id suscipit. Voluptates autem in saepe perferendis.
+                    </pre>
+                    </div>
+                </div>
+            </article> -->
+
+        </div>
+
+
+        <aside id="sidebar">
+            <div class="">
+                <h1>Jihan</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, deserunt! Maiores odio quidem
+                    autem quas rerum voluptate eaque aliquid enim veritatis dicta doloremque modi alias, corrupti minima
+                    excepturi aspernatur fuga itaque ab officia vel nemo iste fugit! Illum quas tenetur neque vitae
+                    obcaecati, totam deserunt porro voluptas eius repellendus consequuntur soluta corrupti eligendi
+                    aliquam temporibus ratione earum molestiae? Corrupti amet similique cum adipisci ipsam accusantium?
+                    Placeat esse, consequuntur inventore deserunt repellendus animi officia odio cum eveniet sit velit
+                    nulla, incidunt ullam praesentium ex quam earum. Itaque esse minima tenetur aut porro ad ratione,
+                    debitis nisi voluptates vero odio sed magni architecto cumque impedit eos necessitatibus optio?
+                    Quisquam voluptatum accusantium expedita ut placeat, dolor consequatur. Iusto quam facilis iste! At
+                    quisquam vel mollitia id fugit praesentium ipsam. Perferendis ipsa dolor adipisci suscipit ut
+                    maiores minus, asperiores quasi repellendus repudiandae. Unde voluptatum libero adipisci
+                    perspiciatis maiores sapiente, atque commodi distinctio fuga quisquam?</p>
+            </div>
+            <div class="">
+                <h1>Jihan</h1>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam itaque natus corporis cupiditate
+                    aperiam. Nisi saepe dolores eius, harum hic cumque dolorum enim ipsa inventore nemo ipsam obcaecati,
+                    autem impedit quia voluptatibus, molestias deleniti? Veritatis iure tenetur magnam, consequuntur
+                    sunt hic excepturi repellat, repellendus rerum id tempora deserunt consequatur illo, dolore possimus
+                    atque soluta. Minus perspiciatis quam fugiat consequatur amet eligendi excepturi molestiae, sed
+                    mollitia culpa, neque unde in deserunt sunt exercitationem reprehenderit nostrum et, magnam maxime?
+                    Quisquam deleniti accusamus expedita, voluptate, voluptas fugit voluptatem quas distinctio odit illo
+                    harum debitis vero? Soluta modi maiores vero quod aliquid sed impedit aut similique ducimus.
+                    Veritatis tenetur minus, impedit hic error temporibus doloribus? Harum eligendi itaque corporis
+                    perferendis fuga! Magnam dicta ipsa neque atque mollitia tempora expedita asperiores aliquam.
+                    Doloribus rem animi quas officiis facere? Minus magni asperiores eligendi maiores fugit, odio
+                    debitis inventore laudantium aspernatur sint in, fuga cupiditate nulla doloremque, error
+                    exercitationem laboriosam atque quam quod pariatur sit praesentium? Rerum nesciunt magni illo
+                    aspernatur soluta fuga, molestias veniam exercitationem veritatis laborum tenetur magnam, atque
+                    voluptates saepe at dolorem, in quaerat quibusdam. Perspiciatis cum dolore, eos perferendis sapiente
+                    nobis distinctio, voluptatum consequatur dolor voluptatibus nam, aliquam eius quod ullam molestiae!
+                    Voluptatum praesentium libero tenetur ea odit itaque doloribus amet quam eum dolore eligendi minus
+                    expedita repellendus fugit perferendis pariatur minima voluptatibus repellat magnam, natus similique
+                    placeat corporis labore neque! Architecto, perferendis! Vitae debitis inventore cumque temporibus
+                    perferendis velit! Culpa sapiente animi iste, facere voluptates porro dolorum nulla similique
+                    voluptatum corporis fuga reprehenderit fugiat maiores soluta numquam incidunt natus consequuntur!
+                    Unde minima repellendus nesciunt necessitatibus officia incidunt, voluptates nam blanditiis atque,
+                    deleniti itaque, id neque. Quas iste asperiores exercitationem beatae doloribus unde illum fugiat.
+                    Quidem quasi sapiente voluptatum. Accusantium ipsam praesentium voluptas ipsum magni quod dicta
+                    quidem deserunt molestias nobis in similique sequi omnis voluptatibus eligendi optio cum alias
+                    repellendus qui, voluptates eaque vero? Vitae, labore expedita maiores provident esse repellat.
+                    Recusandae repellendus, pariatur, voluptatum architecto quos maxime facilis accusantium magni
+                    laborum libero doloremque aliquam vitae consequuntur accusamus dolorem animi est! Natus nobis odit
+                    dicta laudantium necessitatibus quo aliquid omnis. Earum cupiditate odio, deserunt animi nostrum
+                    adipisci dolores nemo similique, iure eum nam id exercitationem maiores possimus quae fuga fugit
+                    doloribus. Est mollitia recusandae sint sit? Blanditiis minima aperiam omnis expedita dicta.
+                    Quibusdam amet libero iusto at odit porro necessitatibus ipsum beatae nostrum? Deserunt, eos! Ipsa
+                    eligendi ullam commodi earum dolor id beatae quia dicta dolores eius dolorum temporibus laboriosam,
+                    recusandae facere doloribus sunt est molestiae praesentium distinctio. Quia laboriosam soluta
+                    dolorem dolore quidem temporibus eaque expedita quae fugit ullam debitis quasi suscipit labore, id
+                    reiciendis, possimus pariatur consequuntur sequi dolorum eveniet animi numquam cupiditate. Cum illum
+                    ducimus at assumenda ipsam facere maxime, necessitatibus itaque officia facilis in, natus
+                    praesentium ab magnam sapiente aperiam sequi rerum ad fuga blanditiis minima officiis voluptas. Quod
+                    deserunt officiis ratione minus. Cumque qui inventore illum praesentium odit iste nesciunt, quam
+                    iusto sed quisquam blanditiis accusamus fuga sint ipsa consequatur temporibus omnis. Iusto ex
+                    numquam inventore nihil!</p> -->
+            </div>
+            <div class="">
+                <h1>Jihan</h1>
+            </div>
+        </aside>
+    </main>
+    <!-- <script src="../js/jquery-3.5.1.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../js/mhstyle-copyboard.js"></script>
+    <script src="../js/mhstyle.js"></script>
+    <script>
+        new mhstyle_copyboard('.copybutton');
+
+        let box = document.querySelectorAll('.sidebar-1 .mh-navbar-collapse .mh-navbar-nav .mh-item a');
+        let post = document.querySelector('.post iframe');
+        let btn = document.querySelector('.btn-run');
+        patt = post.getAttribute('src');
+        // for (let i = 0; i < box.length; i++) {
+        //     att = box[i].getAttribute('href');
+        //     post.src = att;
+        //     patt.replace(patt, att);
+        // }
+
+        function funrun() {
+            console.log(post.contentWindow.document);
+        };
+    </script>
+    
+</body>
+
+</html>

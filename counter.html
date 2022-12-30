@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="./css/mh-style.css">
+</head>
+
+<body>
+
+<br>
+<br>
+    <div class="mh-container">
+        <span class="mh-counter mh-fs-40 mh-fw-700 mh-box-shadow-lg mh-border-radius-10 mh-p-6 mh-m-3" mh-numcount="1075">0</span>
+        <span class="mh-counter mh-fs-40 mh-fw-700 mh-box-shadow-lg mh-border-radius-10 mh-p-6 mh-m-3" mh-numcount="90">0</span>
+        <span class="mh-counter mh-fs-40 mh-fw-700 mh-box-shadow-lg mh-border-radius-10 mh-p-6 mh-m-3" mh-numcount="755">0</span>
+    </div>
+    <script>
+        let counters = document.querySelectorAll('.mh-counter');
+        counters.forEach(counter => {
+            let updateCount = () => {
+                let counterTarget = +counter.getAttribute('mh-numcount');
+                let counterCount = +counter.innerText;
+                let counterIncrement = counterTarget / 300;
+                if(counterCount < counterTarget){
+                    counter.innerText = Math.ceil(counterCount + counterIncrement);
+                    setTimeout(updateCount,1);
+                }else{
+                    counter.innerText = counterTarget;
+                }
+            };
+            updateCount();
+        });
+    </script>
+</body>
+
+</html>

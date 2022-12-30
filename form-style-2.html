@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Style 2</title>
+
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <link rel="stylesheet" href="./css/mhstyle-icon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .mh-contact-form {
+            font-family: 'Roboto', sans-serif;
+            margin: 0 auto;
+            color: #023047;
+            padding: 48px 16px;
+
+        }
+
+        .mh-contact-desc {
+            padding-left: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .mh-contact-desc h2 {
+            margin-bottom: 15px;
+        }
+        .mh-contact-desc p{
+            line-height: 25px;
+        }
+        .mh-contact-desc .social-icons a {
+            font-size: 32px;
+            color: #023047;
+            margin-right: 12px;
+            transition: all .5s;
+            display: inline-block;
+        }
+        .mh-contact-desc .social-icons a:hover{
+            transform: scale(1.15);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mh-container">
+
+        <input type="text" class="mh-form-field">
+        <br>
+        <div class="mh-field-group">
+            <span class="mh-field-group-label">@Monabbor hossen</span>
+            <input type="text" placeholder="Email" class="mh-border-left-radius-0 mh-form-field">
+
+        </div>
+    </div>
+
+    <div class="mh-container">
+        <div class="mh-row mh-contact-form">
+            <div class="mh-col-md-6 mh-form-s2">
+                <h2>Contact Form</h2>
+                <form action="">
+                    <div class="mh-form-element">
+                        <input type="text" id="contact-name" class="mh-form-field">
+                        <label for="contact-name" class="">Full Name</label>
+                    </div>
+                    <div class="mh-form-element">
+                        <input type="text" id="contact-email" class="mh-form-field">
+                        <label for="contact-email">Email</label>
+                    </div>
+                    <div class="mh-form-element">
+                        <textarea name="" id="contact-message" class="mh-form-field" cols="10" rows="10"></textarea>
+                        <label for="contact-message">Your Message</label>
+                    </div>
+                    <input type="submit" class="mh-btn mh-form-btn" value="Send">
+                </form>
+            </div>
+            <div class="mh-col-md-6 mh-contact-desc">
+
+                <h2>Or Here</h2>
+                <p>
+                    <strong>Email:</strong>
+                </p>
+                <p>monabborhossen@gmail.com</p>
+                <br />
+                <br />
+                <p>
+                    <strong>Get Social: </strong>
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="mh mhi-facebook-square"></i></a>
+                    <a href="#"><i class="mh mhi-twitter-square"></i></a>
+                    <a href="#"><i class="mh mhi-instagram-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/mhstyle.js"></script>
+    <script>
+       
+
+    </script>
+</body>
+
+</html>

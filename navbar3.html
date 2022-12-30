@@ -1,0 +1,368 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="navbar.css"> -->
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <link rel="stylesheet" href="./css/mhstyle-icon.css">
+    <style>
+        body {
+            background-color: var(--mh-light-color);
+        }
+
+        /***************************/
+        .mh-sidebar {
+            width: 220px !important;
+            position: fixed;
+            background: var(--mh-white-color);
+            height: 100%;
+            flex-direction: column;
+            top: 68px;
+            left: -100%;
+            animation: sidebarleftanimation 300ms ease forwards;
+            z-index: 9;
+            overflow: auto;
+        }
+
+        @keyframes sidebarleftanimation {
+            to {
+                left: 0;
+            }
+        }
+
+        .mh-sidebar .mh-navbar {
+            display: inline-block;
+            top: 30px;
+            width: 100%;
+            padding-left: 10px;
+        }
+
+        .mh-sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            height: 3.2rem;
+            color: var(--mh-gray-color-light);
+            position: relative;
+            text-decoration: none;
+        }
+
+        .mh-sidebar a h4 {
+            font-size: 16px;
+        }
+
+        .mh-sidebar a.active {
+            background: var(--mh-white-color);
+            color: var(--mh-primary-color);
+        }
+
+        .mh-sidebar a.active::before {
+            content: "";
+            width: 6px;
+            height: 100%;
+            position: absolute;
+            background: var(--mh-primary-color);
+            margin-left: -10px;
+        }
+
+        .mh-sidebar a i {
+            font-size: 20px !important;
+            margin-left: 16px;
+            transition: all 300ms ease;
+        }
+
+        .mh-sidebar button.close-btn {
+            display: none;
+            position: absolute;
+            padding: 5px;
+            top: 5px;
+            right: 1rem;
+            z-index: 4;
+            background: transparent;
+            border: none;
+            color: var(--mh-dark-color);
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .mh-sidebar button.close-btn {
+                display: inline-block;
+            }
+
+            .mh-sidebar {
+                top: 55px;
+            }
+
+            .mh-main-contant {
+                max-width: 100% !important;
+                left: 0 !important;
+                top: 70px !important;
+            }
+        }
+
+        .mh-main-contant {
+            position: relative;
+            left: 230px !important;
+            top: 75px;
+            max-width: calc(100% - 230px) !important;
+            z-index: -11;
+        }
+
+        .mh-sidebar a:hover {
+            color: var(--mh-primary-color);
+            margin-left: -5px;
+        }
+
+        .mh-sidebar .mh-dropdown .mh-dropdown-menu {
+            position: relative;
+            border: none;
+            border-top: var(--mh-border);
+            padding-left: 30px;
+        }
+
+        .mh-main-sidebar-contant {
+            position: relative;
+            z-index: 10;
+        }
+
+        /****************/
+        .mh-alert-close .mh-close {
+            display: block;
+            overflow: hidden;
+            float: right;
+            background: none;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="mh-navbar mh-navbar-dark mh-navbar-expand-lg mh-bg-skyblue mh-p-fi-top mh-w-100">
+            <div class="mh-container-fluid">
+                <a href="#" class="mh-navbar-logo">Jihan</a>
+                <button class="mh-navbar-toggle mh-order-1" mh-navtoggle="navbarMenu">
+                    <i class="mh mhi-bars"></i>
+                </button>
+                <div class="mh-ml-auto mh-df mh-mr-3">
+
+                    <div class="mh-ml-auto-lg mh-my-2 mh-theme-btn">
+                        <i class="mh mhi-sun-fill active"></i>
+                        <i class="mh mhi-moon"></i>
+                    </div>
+                    <div class="mh-profile mh-ml-2 mh-dropdown">
+                        <div class="mh-profile-photo"><img src="./img/header-bg.jpg" alt="" class="mh-img-fluid"></div>
+                        <div class="mh-dropdown-toggle mh-df mh-align-items-center mh-gap-2">
+                            <h5>Jihan</h5><i class="mh mhi-arrow-down"></i>
+                        </div>
+                        <div class="mh-dropdown-menu">
+
+                            <form action="" method="POST">
+                                <button type="submit" name="logout_btn" class="mh-dropdown-item mh-btn">Log Out</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main class="mh-main-sidebar-contant">
+        <div class="mh-navbar-expand-lg mh-navbar">
+
+            <div class="mh-sidebar mh-navbar-collapse mh-collapse" id="navbarMenu">
+
+                <nav class="mh-navbar mh-navbar-expand">
+                    <a href="#" class="active">
+                        <i class="mh mhi-dashboard"></i>
+                        <h4>Dashboard</h4>
+                    </a>
+                    <a href="#">
+                        <i class="mh mhi-coin-dollar"></i>
+                        <h4>Exchange</h4>
+                    </a>
+                    <div class="mh-dropdown" mh-dropdown="dropdown0">
+                        <a href="#" class="mh-dropdown-toggle">
+                            <i class="mh mhi-coin-dollar"></i>
+                            <h4>Category</h4>
+                        </a>
+                        <div class="mh-dropdown-menu" id="dropdown0">
+                            <a class="mh-nav-link" href="#">Add Category</a>
+                            <a class="mh-nav-link" href="#">View Category</a>
+
+                        </div>
+                    </div>
+                    <div class="mh-dropdown" mh-dropdown="dropdown1">
+                        <a href="#" class="mh-dropdown-toggle">
+                            <i class="mh mhi-coin-dollar"></i>
+                            <h4>Categorys</h4>
+                        </a>
+                        <div class="mh-dropdown-menu" id="dropdown1">
+                            <a class="mh-nav-link" href="#">Add Categorys</a>
+                            <a class="mh-nav-link" href="#">View Categorys</a>
+
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="mh mhi-credit-card-outline"></i>
+                        <h4>Transactions</h4>
+                    </a>
+                    <a href="#">
+                        <i class="mh mhi-chart-line"></i>
+                        <h4>Analytics</h4>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div class="mh-main-contant">
+            <div class="mh-row">
+                <div class="mh-col-lg-3 mh-col-md-6 mh-pr-0">
+                    <div class="mh-card mh-bg-primary mh-color-light">
+                        <div class="mh-card-body">Jihan</div>
+                        <div class="mh-card-footer">Jihan <i class="mh mhi-arrow-right"></i></div>
+                    </div>
+                </div>
+                <div class="mh-col-lg-3 mh-col-md-6 mh-pr-0">
+                    <div class="mh-card mh-bg-success mh-color-light">
+                        <div class="mh-card-body">Jihan</div>
+                        <div class="mh-card-footer">Jihan <i class="mh mhi-arrow-right"></i></div>
+                    </div>
+                </div>
+                <div class="mh-col-lg-3 mh-col-md-6 mh-pr-0">
+                    <div class="mh-card mh-bg-warning mh-color-light">
+                        <div class="mh-card-body">Jihan</div>
+                        <div class="mh-card-footer">Jihan <i class="mh mhi-arrow-right"></i></div>
+                    </div>
+                </div>
+                <div class="mh-col-lg-3 mh-col-md-6 mh-pr-0">
+                    <div class="mh-card mh-bg-danger mh-color-light">
+                        <div class="mh-card-body">Jihan</div>
+                        <div class="mh-card-footer">Jihan <i class="mh mhi-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mh-col-lg-3 mh-pt-3 mh-col-md-6 mh-pr-0">
+                <div class="mh-card mh-bg-info mh-color-light">
+                    <div class="mh-card-body">Jihan</div>
+                    <div class="mh-card-footer">Jihan <i class="mh mhi-arrow-right"></i></div>
+                </div>
+            </div>
+
+            <div class="mh-alert mh-alert-s1 mh-alert-close">
+                Make sure you are using Javascript module or not?! if using js6 modules your html events
+                <button class="mh-close">
+                    <i class="mh mhi-clear"></i>
+                </button>
+            </div>
+            <div class="mh-alert mh-alert-s2 mh-alert-close">
+                Make sure you are using Javascript module or not?! if using js6 modules your html events
+                <button class="mh-close">
+                    <i class="mh mhi-clear"></i>
+                </button>
+            </div>
+            <div class="mh-alert mh-alert-s3 mh-alert-close">
+                Make sure you are using Javascript module or not?! if using js6 modules your html events
+                <button class="mh-close">
+                    <i class="mh mhi-clear"></i>
+                </button>
+            </div>
+            <div class="mh-alert mh-alert-s4 mh-alert-close">
+                Make sure you are using Javascript module or not?! if using js6 modules your html events
+                <button class="mh-close">
+                    <i class="mh mhi-clear"></i>
+                </button>
+            </div>
+            <div class="mh-alert mh-alert-s5 mh-alert-close">
+                Make sure you are using Javascript <a href="#">module or not?!</a> if using js6 modules your html events
+                <button class="mh-close">
+                    <i class="mh mhi-clear"></i>
+                </button>
+            </div>
+            <div class="mh-alert mh-alert-s6 mh-alert-close">
+                Make sure you are using Javascript <a href="#">module or not?!</a> if using js6 modules your html events
+                <button class="mh-close">
+                    <i class="mh mhi-clear"></i>
+                </button>
+            </div>
+            <div class="mh-alert mh-alert-s7 mh-alert-close">
+                Make sure you are using Javascript <a href="#">module or not?</a>! if using js6 modules your html events
+                <button class="mh-close">
+                    <i class="mh mhi-clear"></i>
+                </button>
+            </div>
+
+            <!-- <div class="red item">
+                Click on this text!
+                <button class="btn">&times;</button>
+            </div>
+            <div class="green item">
+                Click on this text!
+                <a herf="#">Jihan</a>
+                <button class="btn">&times;</button>
+            </div>
+            <div class="red item">
+                Click on this text!
+                <button class="btn">&times;</button>
+            </div> -->
+
+        </div>
+    </main>
+
+    <script src="./js/mhstyle.js"></script>
+    <!-- <script>
+        let a = document.querySelector(".item");
+        let b = document.querySelectorAll(".btn");
+        for (let i = 0; i < b.length; i++) {
+            b[i].setAttribute('onclick', 'test(this)');
+        }
+        const test = (btn) => {
+            const parent = btn.closest('.item');
+            parent.remove();
+        }
+    </script> 
+    <script>
+        let alertCloseBtn = document.querySelectorAll(".mh-alert-close .mh-close");
+        for (let i = 0; i < alertCloseBtn.length; i++) {
+            alertCloseBtn[i].setAttribute('onclick', 'alertClosefunction(this)');
+        }
+        const alertClosefunction = (btn) => {
+            const parent = btn.closest(".mh-alert-close");
+            parent.remove();
+        }
+    </script>-->
+    <!-- <script>
+        const sidebarnavMenuToggleButtons = document.querySelectorAll(".mh-sidebar-nav-btn");
+        const sidebarnavMenuBodyNavs = document.querySelectorAll(".mh-navbar-collapse");
+        const sidebarnavMenuBodyNavsClosebtn = document.querySelectorAll(".close-btn");
+        if (sidebarnavMenuToggleButtons) {
+            for (const sidebarnavMenuToggleButton of sidebarnavMenuToggleButtons) {
+                for (const sidebarnavMenuBodyNav of sidebarnavMenuBodyNavs) {
+                    sidebarnavMenuToggleButton.addEventListener("click", (event) => {
+                        const sidebarnavMenuToggleButtonAttribute = sidebarnavMenuToggleButton.getAttribute(
+                            "mh-navtoggle");
+                        const sidebarnavMenuBodyNavAttribute = sidebarnavMenuBodyNav.getAttribute("id");
+                        if (sidebarnavMenuToggleButtonAttribute == sidebarnavMenuBodyNavAttribute) {
+                            if (sidebarnavMenuBodyNavsClosebtn) {
+                                sidebarnavMenuBodyNav.classList.remove("mh-collapse");
+                                for (const sidebarnavMenuBodyNavsClose of sidebarnavMenuBodyNavsClosebtn) {
+                                    sidebarnavMenuBodyNavsClose.addEventListener("click", (event) => {
+                                        sidebarnavMenuBodyNav.classList.add("mh-collapse");
+                                    });
+                                }
+                            }else {
+                                sidebarnavMenuBodyNav.classList.toggle("mh-collapse");
+                            }
+                        }
+                    });
+                }
+            }
+        }
+    </script> -->
+</body>
+
+</html>

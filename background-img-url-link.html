@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+
+<style>
+    .jihan{
+        /* background-image: url(./img/mhstyle-ad.png); */
+    }
+</style>
+
+</head>
+<body>
+
+
+<div class="mh-bg-img-url" mh-bg-img-url="./img/mhstyle-ad.png">
+    <h1>Jihan</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fugit nesciunt fugiat deserunt voluptate quae voluptatem! Odit alias in neque dolore? Sunt quidem voluptas soluta. Animi sunt voluptatem cum dicta!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fugit nesciunt fugiat deserunt voluptate quae voluptatem! Odit alias in neque dolore? Sunt quidem voluptas soluta. Animi sunt voluptatem cum dicta!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fugit nesciunt fugiat deserunt voluptate quae voluptatem! Odit alias in neque dolore? Sunt quidem voluptas soluta. Animi sunt voluptatem cum dicta!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fugit nesciunt fugiat deserunt voluptate quae voluptatem! Odit alias in neque dolore? Sunt quidem voluptas soluta. Animi sunt voluptatem cum dicta!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fugit nesciunt fugiat deserunt voluptate quae voluptatem! Odit alias in neque dolore? Sunt quidem voluptas soluta. Animi sunt voluptatem cum dicta!</p>
+</div>
+<div class="mh-bg-img-url" mh-bg-img-url="./img/mhstyle-ad.png">
+    <h1>Jihan</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fugit nesciunt fugiat deserunt voluptate quae voluptatem! Odit alias in neque dolore? Sunt quidem voluptas soluta. Animi sunt voluptatem cum dicta!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fugit nesciunt fugiat deserunt voluptate quae voluptatem! Odit alias in neque dolore? Sunt quidem voluptas soluta. Animi sunt voluptatem cum dicta!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fugit nesciunt fugiat deserunt voluptate quae voluptatem! Odit alias in neque dolore? Sunt quidem voluptas soluta. Animi sunt voluptatem cum dicta!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fugit nesciunt fugiat deserunt voluptate quae voluptatem! Odit alias in neque dolore? Sunt quidem voluptas soluta. Animi sunt voluptatem cum dicta!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fugit nesciunt fugiat deserunt voluptate quae voluptatem! Odit alias in neque dolore? Sunt quidem voluptas soluta. Animi sunt voluptatem cum dicta!</p>
+</div>
+
+<script>
+
+    let bg_img_url = document.querySelectorAll('.mh-bg-img-url');
+    for(let i=0;i<bg_img_url.length;i++){
+    let bg_url = bg_img_url[i].getAttribute('mh-bg-img-url');
+        bg_img_url[i].style.backgroundImage = "url('"+bg_url+"')";
+    }
+</script>
+    
+</body>
+</html>
